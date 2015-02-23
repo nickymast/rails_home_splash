@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+  font-family: Calibri;
+  font-size: 20px;
+  background-color: #A8A8F4;
+}
