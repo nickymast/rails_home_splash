@@ -5,15 +5,20 @@
 #main {
   text-align: center;
   top: 30%;
-  width: 100%;
+  width: 99%;
   position: absolute;
   line-height: 1em;
+  color: white;
+  font-family: Lobster;
 
   h1 {
-    font-family: impact;
     font-size: 4em;
+    font-weight: normal;
   }
 
+  p {
+    font-size: 3em;
+  }
 }
 
 // #clock{
