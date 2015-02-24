@@ -10,9 +10,9 @@ class HomeController < ApplicationController
       "Good Morning! Goedemorgen!"
     when 12..16
       "Good Afternoon! Goedemiddag!"
-    when 16..19
+    when 17..19
       "Good Evening! Goedenavond!"
-    when 19..23, 0..4
+    when 20..23, 0..4
       "Good Night! Goedenavond"
     end
 
