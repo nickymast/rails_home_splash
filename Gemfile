@@ -41,7 +41,11 @@ gem 'thin'
 # We want font awesome icons
 gem 'font-awesome-rails'
 
+
 group :development, :test do
+  # Gives us great and colorful puts
+  gem 'awesome_print'
+
   # Quiet those assets down!! SIMMA DOWN NAH!
   gem 'quiet_assets'
 
