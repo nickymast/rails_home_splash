@@ -9,7 +9,7 @@ class HomeController < ApplicationController
     when 5..11
       "Good Morning! <i class='fa fa-coffee'></i> Goedemorgen!".html_safe
     when 12..16
-      "Good Afternoon! <i class='fa fa-cutlery'></i>  Goedemiddag!".html_safe
+      "Good Afternoon! <i class='fa fa-cutlery'></i> Goedemiddag!".html_safe
     when 17..19
       "Good Evening! <i class='fa fa-glass'></i> Goedenavond!".html_safe
     when 20..23, 0..4
