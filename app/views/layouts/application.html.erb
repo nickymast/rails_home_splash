@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
 <head>
   <title>HomeSplash</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+  <div id="clearance_links">
+    <% if signed_in? %>
+      Welcome <%= current_user.email %>
+      <%= link_to (fa_icon "sign-out", text: "Sign Out"), sign_out_path, method: :delete %>
+    <% else %>
+      <%= link_to (fa_icon "users", text: "Sign In"), sign_in_path %>
+    <% end %>
 
-<%= yield %>
+    <div id="flash">
+      <% flash.each do |key, value| %>
+        <div class="flash <%= key %>"><%= value %></div>
+      <% end %>
+    </div>
+  </div>
 
-<%= render 'shared/footer' %>
+  <%= yield %>
+
+  <%= render 'shared/footer' %>
 
 </body>
 </html>
