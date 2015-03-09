@@ -1,3 +1,4 @@
 Clearance.configure do |config|
-  config.mailer_sender = "reply@example.com"
+  # TODO change this when pushing to Heroku
+  config.mailer_sender = "noreply@nickyisawesome.com"
 end
