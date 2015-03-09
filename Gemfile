@@ -48,15 +48,22 @@ group :development, :test do
   # Gives us great and colorful puts
   gem 'awesome_print'
 
-  # Quiet those assets down!! SIMMA DOWN NAH!
-  gem 'quiet_assets'
-
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
+
+
+group :development do
+  # Adding mail opening abilities
+  gem 'letter_opener'
+
+  # Quiet those assets down!! SIMMA DOWN NAH!
+  gem 'quiet_assets'
+end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
