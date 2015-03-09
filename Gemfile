@@ -41,6 +41,8 @@ gem 'thin'
 # We want font awesome icons
 gem 'font-awesome-rails'
 
+# We want user authentication with clearance
+gem 'clearance'
 
 group :development, :test do
   # Gives us great and colorful puts
