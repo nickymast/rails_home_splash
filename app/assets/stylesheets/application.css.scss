@@ -32,11 +32,6 @@ body {
   background-color: #A8A8F4;
 }
 
-#clearance {
-  color: white;
-  font-size: 1em;
-}
-
 #clearance_links {
   font-size: $minor-sized;
   padding: .35em;
@@ -49,6 +44,26 @@ body {
   }
 }
 
+#clearance {
+  color: white;
+  font-size: 1em;
+  background-color: rgba(92, 142, 142, .5);
+  padding: 1em 2em 2em 2em;
+  border-radius: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 15em;
+
+  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  div {
+    padding-top: 0.3em;
+  }
+}
 
 #footer {
   position: absolute;
