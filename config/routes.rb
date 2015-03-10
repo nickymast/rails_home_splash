@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :backgrounds
+
+  resources :purposes
+
+  resources :locations
+
   get 'home/index'
 
   root 'home#index'
