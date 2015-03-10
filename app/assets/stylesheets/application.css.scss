@@ -63,7 +63,31 @@ body {
   div {
     padding-top: 0.3em;
   }
+
+  .other-links{
+    font-size: $minor-sized;
+    margin-top: 1.5em;
+    padding: 6px;
+    border: 1px solid rgba(255,255,255,1);
+    border-radius: 100px;
+    font-weight: bold;
+
+    a {
+      padding: 2px;
+    }
+  }
+
 }
+
+ .flash.notice {
+    background-color: rgba(255,0,0,0.6);
+    padding:  1em;
+    width: 15em;
+    margin: 0.5em auto;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
 
 #footer {
   position: absolute;

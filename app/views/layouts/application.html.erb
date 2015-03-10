@@ -20,14 +20,14 @@
 
     <div id="flash">
       <% flash.each do |key, value| %>
-        <div class="flash <%= key %>"><%= value %></div>
+      <div class="flash <%= key %>"><%= value %></div>
       <% end %>
     </div>
-  </div>
+ </div>
 
-  <%= yield %>
+ <%= yield %>
 
-  <%= render 'shared/footer' %>
+ <%= render 'shared/footer' %>
 
 </body>
 </html>
