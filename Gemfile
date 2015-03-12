@@ -69,6 +69,9 @@ end
 group :production do
   #Use PostgreSQL for production
   gem 'pg'
+
+  #Heroku needs this
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
