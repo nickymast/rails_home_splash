@@ -21,15 +21,20 @@
   }
 }
 
+
 #quote {
   position: absolute;
   width: 99%;
   bottom: 3em;
   text-align: center;
-  font-size: 1.75vw;
-  // color: #18AAC9;
   color: white;
   text-shadow: 1px 1px 10px #2811bf;
+  line-height: 1;
+}
+
+#quip {
+  bottom: 3em;
+  font-size: 1.75vw;
 
   &:before {
     content: open-quote;
@@ -39,4 +44,10 @@
     content: close-quote;
   }
 
+}
+
+#author {
+  bottom: 2em;
+  font-size: 1.5vw;
+  font-style: italic;
 }

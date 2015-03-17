@@ -11,7 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150310144648) do
+ActiveRecord::Schema.define(version: 20150310154459) do
+
+  create_table "backgrounds", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "image_file"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "backgrounds", ["user_id"], name: "index_backgrounds_on_user_id"
+
+  create_table "locations", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "locations", ["user_id"], name: "index_locations_on_user_id"
+
+  create_table "purposes", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "goal"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "purposes", ["user_id"], name: "index_purposes_on_user_id"
 
   create_table "quotes", force: :cascade do |t|
     t.string   "quip"
