@@ -24,7 +24,7 @@ pad = (number) ->
 
   #Convert hours component to 12-hour updateClock
   twelveHour = currentHours % 12
-  twelveHour = if twelveHour == 0 then 12 else pad(twelveHour)
+  twelveHour = if twelveHour == 0 then 12 else twelveHour
 
   #Compose time string
   currentTimeString = "#{twelveHour}:#{currentMinutes} #{timeOfDay}"
